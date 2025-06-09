@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    background-color: rgb(55, 91, 158);
+    color: rgb(3, 1, 1);
+    padding: 20px;
+}
+nav ul{
+    background-color: #76a7cc;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-flex
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+nav li:hover{
+    background-color: black;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contenido{
+    display : flex;
+    margin: 60px;
+}
+.arículos {
+    width: 80%;
+    border-right: 3px solid black;
+}
+.secciones {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .letreros h1 {
+        font-size: 20px;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+  /* Adaptar el ancho de las imágenes */
+  .imagenes {
+    width: calc(50% - 20px);
+  }
+  /* Ajustar el espaciado entre las imágenes */
+  .imagenes {
+    margin: 10px;
+  }
+}
+
+/* Para dispositivos pequeños */
+@media (max-width: 480px) {
+  /* Adaptar el ancho de las imágenes */
+  .imagenes {
+    width: 100%;
+  }
+  /* Ajustar el espaciado entre las imágenes */
+  .galeria img {
+    margin: 10px 0;
+  }
+  /* Ajustar el tamaño de la fuente */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Para dispositivos grandes */
+@media (min-width: 1200px) {
+  /* Adaptar el ancho de las imágenes */
+  .imagenes {
+    width: calc(25% - 20px);
+  }
+  /* Ajustar el espaciado entre las imágenes */
+  .imagenes {
+    margin: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #Container{
+    flex-direction: column;
+av ul li {
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .clearfix{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  #content{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  aside{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .article{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .article h2{
+     flex-direction: column;
+    font-size: 16px;
+  }
+}    
+  }
+  header {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  nav {
+     flex-direction: column;
+    font-size: 16px;
+  }
+  
+@media (max-width: 768px) {
+    h1{
+        flex-direction: column;
+    font-size: 16px;
+    }
+    nav ul {
+        flex-direction: column;
+    font-size: 16px;
+    }
+    nav li {
+        flex-direction: column;
+    font-size: 16px;
+    }
+    nav a{
+        flex-direction: column;
+    font-size: 16px;
+    }
+    nav li:hover{
+        flex-direction: column;
+    font-size: 16px;
+    }
+    img{
+        flex-direction: column;
+    font-size: 16px;
+    }
+    .contenido{
+        flex-direction: column;
+    font-size: 16px;
+    }
+    .arículos{
+        flex-direction: column;
+    font-size: 16px;
+    }
+    .secciones{
+        flex-direction: column;
+    font-size: 16px;
+    }
+}

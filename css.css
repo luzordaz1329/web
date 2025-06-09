@@ -1,0 +1,109 @@
+*{
+    max-width: 100%;
+    padding: 0px;
+    margin: 0PX;
+}
+
+body{
+    background:rgb(189, 216, 252); /*Cambie el color de todos los elementos, como por ejmplo el fondo*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Container{
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+header {
+    background: rgb(126, 170, 219);/*Cambie el color*/
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 120px;/*Con esto cambie donde se ubicaba el título*/
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+nav{
+    background: rgb(175, 208, 252);/*Cambie el color*/
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;/*con este cambie el tamaño de la barra de arriba donde se encuentran los vínculos a las otras páginas*/
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: 80%;
+    background: rgb(126, 170, 219);/*Cambie el color*/
+    min-height: 220px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    background: rgb(156, 191, 255);/*Cambie el color*/
+    min-height: 317px;/*cambie el tamaño (posición) de la barra*/
+    padding: 10px;/*Con este cambie donde se ubicada la barra lateral, hice que se moviera hacia a lado de los otros elementos y no abajo*/
+}
+
+.article{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid white;
+
+}
+
+.article h2{
+    font-size: 15px;/*Cambie el tamaño de la barra lateral*/
+}
+@media (max-width: 768px) {
+  #Container{
+    flex-direction: column;
+    font-size: 16px;
+  }
+  header {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  nav {
+     flex-direction: column;
+    font-size: 16px;
+  }
+
+  nav ul li {
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .clearfix{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  #content{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  aside{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .article{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .article h2{
+     flex-direction: column;
+    font-size: 16px;
+  }
+}

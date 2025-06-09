@@ -1,0 +1,116 @@
+
+body{
+   /*modifique el color de fondo*/
+    
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(124, 161, 218);
+}   
+#Container{
+    /*borde de pantalla- color. etc*/
+    width: 1400px;
+    margin: 0px auto;   
+    border: 1px solid rgba(57, 94, 161, 0.966);
+}
+header{
+    /*color de titulo*/ 
+   background-color: #184374c7;
+    height: 100px;
+    width: 100%;
+    border-radius: 34px;
+    text-align:center;
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    border-bottom: 14px solid rgb(247, 245, 245);
+}
+
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+.clearflix{
+    clear: both;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 23px;
+    padding: 30px;
+}
+
+.gallery-item {
+    background-color: #ececec;
+    border: 1px solid #4a96eec7;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item p {
+    margin: 10px 0;
+    font-size: 13px;
+   color: rgb(15, 1, 1);
+    size: 10px;
+}
+.letreros { /*cambiar el nmbre*/
+    width: 100%;
+    height: auto;
+color: rgb(102, 115, 233);
+text-align:center;
+
+
+}
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    font-size: 16px;
+    }
+.Container:{
+        flex-direction: column;
+    font-size: 16px;
+    };
+  header{       
+    flex-direction: column;
+    font-size: 16px;
+  }  
+ .gallery{
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .gallery-item{
+    flex-direction: column;
+    font-size: 16px;
+  }
+  nav ul li{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .clearflix{
+     flex-direction: column;
+    font-size: 16px;
+  }
+  .gallery-item img {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .letreros{
+    flex-direction: column;
+    font-size: 16px;
+  }
+ .gallery-item p {
+    flex-direction: column;
+    font-size: 16px;
+ }
+}
